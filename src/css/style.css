@@ -67,6 +67,13 @@ img {
 
 
 /* CUSTOM STYLES START */
+.header {
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #191c1f;
+}
 
 /* CUSTOM STYLES END */
 
