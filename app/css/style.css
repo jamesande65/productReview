@@ -68,6 +68,27 @@ img {
 
 
 /* CUSTOM STYLES START */
+.clear {
+	clear: both;
+}
+
+.red-text {
+	color: #ff0125;
+}
+
+.btn {
+	min-width: 84px;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	border: 1px solid rgba(100, 105, 109, 0.34);
+	background-color: #ffffff;
+	color: #25282a;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: .7px;
+}
+
 .arrow-span {
 	display: inline-block;
 	position: relative;
@@ -81,12 +102,19 @@ img {
 	        transform: rotate(45deg);
 }
 
+.todays-deals_price .old-price {
+	color: #626262;
+	font-size: 18px;
+	text-decoration: line-through;
+}
+
 .content-block_title {
 	margin-top: 50px;
 }
 
 .content-block {
 	margin-top: 29px;
+	margin-bottom: 50px;
 }
 
 .content-block_title-text {
@@ -316,10 +344,6 @@ img {
 
 
 /* MAIN STYLES START */
-.content {
-
-}
-
 .content .content-block_banner {
 	background: -webkit-gradient(
 			linear,
@@ -394,6 +418,135 @@ img {
 	padding: 20px;
 	margin-top: 22px;
 }
+
+
+/* latest reviews block styles start*/
+.content-block_latest-big-date {
+	color: #6c6c6c;
+	margin-top: 19px;
+}
+
+.content-block_latest-big-date span {
+	font-family: 'Roboto-Regular', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.content-block_latest-big-title {
+	color: #25282a;
+	margin-top: 28px;
+}
+
+.content-block_latest-big-title span {
+	font-size: 24px;
+	font-family: 'Roboto-Bold', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.content-block_latest-big-text {
+	color: #494747;
+	margin-top: 24px;
+}
+
+.content-block_latest-big-text p {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+}
+
+.content-block_latest-big-text p + p {
+	margin-top: 30px;
+}
+
+.content-block_latest-big .btn {
+	margin-top: 26px;
+}
+
+.content-block_latest-small-date {
+	color: #6c6c6c;
+	margin-top: 19px;
+}
+
+.content-block_latest-small-date span {
+	font-family: 'Roboto-Regular', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.content-block_latest-small-title {
+	color: #25282a;
+	margin-top: 12px;
+}
+
+.content-block_latest-small-title span {
+	font-size: 18px;
+	font-family: 'Roboto-Bold', sans-serif;
+	font-weight: 700;
+}
+
+.content-block_latest-small-text {
+	color: #484747;
+	margin-top: 15px;
+}
+
+.content-block_latest-small-text p {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 16px;
+}
+
+.right-block .row + .row .content-block_latest-small {
+	margin-top: 35px;
+}
+/* latest reviews block styles end*/
+
+/* today's deals block styles start */
+.todays-deals {
+	background-color: #f8f8f8;
+}
+
+.todays-deals_img {
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	-webkit-background-size: cover;
+	        background-size: cover;
+	border: 2px solid #000;
+	overflow: auto;
+}
+
+.todays-deals_img:before{
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.todays-deals_title {
+	margin-top: 15px;
+	color: #25282a;
+	font-family: 'Roboto-Bold', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.todays-deals_price span {
+	margin-top: 15px;
+	font-family: 'Roboto-Regular', sans-serif;
+	color: #43af50;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.btn.todays-deals_btn {
+	width: 90%;
+	margin: 17px 5% 0;
+}
+/* today's deals block styles end */
+
 /* MAIN STYLES END */
 
 
