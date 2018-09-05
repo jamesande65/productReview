@@ -350,6 +350,7 @@ img {
 
 .main-menu .menu-item a {
 	text-decoration: none;
+	text-align: center;
 }
 
 .main-menu .menu-item a > span {
@@ -421,6 +422,10 @@ img {
 	letter-spacing: 0.7px;
 	padding: 15px 0;
 	width: 200px;
+}
+
+.main-menu .menu-item .menu-subitem__left li:hover {
+	color: #ff0125;
 }
 
 .main-menu .menu-item .menu-subitem__left li + li {
@@ -506,6 +511,7 @@ img {
 	-webkit-justify-content: space-around;
 	    -ms-flex-pack: distribute;
 	        justify-content: space-around;
+	cursor: pointer;
 }
 
 .mob-menu__burger span {
@@ -701,6 +707,10 @@ img {
 	text-decoration: none;
 }
 
+.content-block__small-title a:hover {
+	color: #ff0125;
+}
+
 .content-block__small-title span {
 	font-size: 18px;
 	font-family: 'Roboto-Bold', sans-serif;
@@ -779,6 +789,19 @@ img {
 .btn.todays-deals__btn {
 	width: 90%;
 	margin: 17px 5% 0;
+	height: 40px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .todays-deals__slick {
@@ -905,6 +928,10 @@ img {
 .footer-menu__list li a {
 	color: #d0d0d0;
 	text-decoration: none;
+}
+
+.footer-menu__list li a:hover {
+	color: #ff0125;
 }
 
 .footer-nav__container {

@@ -10,7 +10,7 @@
 
 @media screen and (max-width: 991px) {
     .row-margin-fix {
-        margin: auto;
+        margin: 0 -15px;
     }
 
     .header {
@@ -82,8 +82,25 @@
         width: 100%;
     }
 
+    .content-block__latest-big-img {
+        width: 100%;
+    }
+
+    .about-block .content-block__latest-big-img {
+        margin-top: 40px;
+    }
+
     .footer-nav__copyright, .footer-nav__list, .socials {
             margin-top: 30px;
+    }
+
+    .footer-menu__block {
+        margin-top: 48px;
+        width: 150px;
+    }
+
+    .about-block {
+        margin: 0;
     }
 }
 
@@ -123,9 +140,5 @@
 
     .bottom-banner {
         display: none;
-    }
-
-    .about-block {
-        margin: 0;
     }
 }

@@ -6,9 +6,34 @@ $(document).ready(function(){
         infinite: false,
         responsive: [
             {
-                breakpoint: 600,
-                settings: unslick
+                breakpoint: 650,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
         ]
     });
+
+
+    var body = document.querySelector('body');
+    var mobMenu = document.querySelector('.js-mob-menu');
+    var mobMenuBtn = document.querySelector('.mob-menu__burger');
+
+    function mobMenuToggle (event) {
+        if (!mobMenuBtn.contains(event.target) && !mobMenu.contains(event.target) && mobMenu.classList.contains('activated')){
+            mobMenu.classList.remove('activated');
+        }
+    }
+
+    body.addEventListener('click', mobMenuToggle);
+
+
 });
