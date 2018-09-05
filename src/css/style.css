@@ -285,15 +285,17 @@ img {
 	border-bottom: 2px solid transparent;
 }
 
-.main-menu .menu-item > span {
+.main-menu .menu-item a {
+	text-decoration: none;
+}
+
+.main-menu .menu-item a > span {
 	color: #ffffff;
 	font-family: 'Roboto-Regular', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	line-height: 56px;
 	text-transform: uppercase;
 	letter-spacing: .7px;
-	white-space: nowrap;
 }
 
 .main-menu .menu-item:hover {
@@ -386,7 +388,61 @@ img {
 }
 
 .menu-subitem__right-block img {
-	max-height: 100%;
+	max-height: 175px;
+}
+
+.mob-menu__burger {
+	width: 40px;
+	height: 40px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	background-color: transparent;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.mob-menu__burger span {
+	display: inline-block;
+	width: 30px;
+	height: 5px;
+	border-radius: 2px;
+	background-color: #fff;
+}
+
+.mob-menu {
+	position: fixed;
+	top: 0;
+	left: -300px;
+	transition: left .5s ease;
+	height: 100vh;
+	width: 250px;
+	padding: 25px;
+	z-index: 15;
+	background-color: rgba(0,0,0,.8);
+}
+
+.mob-menu.activated {
+	left: 0;
+	transition: left .5s ease;
+}
+
+.mob-menu .menu-item {
+	margin-bottom: 10px;
+}
+
+.mob-menu .menu-item a {
+	text-decoration: none;
+}
+
+.mob-menu .menu-item span {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #ffffff;
 }
 /* HEADER STYLES END */
 
@@ -576,6 +632,14 @@ img {
 .btn.todays-deals__btn {
 	width: 90%;
 	margin: 17px 5% 0;
+}
+
+.todays-deals__slick {
+	overflow: hidden;
+}
+
+.todays-deals__slick .block {
+	margin: 0 5px;
 }
 /* today's deals block styles end */
 
