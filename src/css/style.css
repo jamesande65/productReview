@@ -794,6 +794,38 @@ a.ad-link {
 }
 /* bottom banner block styles end */
 
+
+/* ===============CONTACT=US=PAGE=================*/
+
+.banner-block {
+    height: 240px;
+    background: url("../img/background-4.jpg") 50% 54% no-repeat;
+    position: relative;
+}
+
+.banner-block__title {
+    position: absolute;
+    bottom: 0;
+}
+
+.banner-block__title span {
+	text-shadow: 0 4px 7px rgba(0,0,0,.2);
+    color: #fff;
+    font-size: 70px;
+    line-height: 92px;
+    font-weight: 300;
+    text-transform: uppercase;
+    background-color: #191c1f;
+    padding: 5px 20px;
+}
+
+.banner-block__title span span {
+	padding: 0;
+}
+
+/* ===============CONTACT=US=PAGE=================*/
+
+
 /* MAIN STYLES END */
 
 
