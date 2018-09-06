@@ -708,6 +708,16 @@ img {
 /* trending block styles end */
 
 
+/* terms block styles start */
+
+.terms-block .divider {
+	border-top: 3px solid #25282a;
+	margin-top: 29px;
+}
+
+/* terms block styles end */
+
+
 /* bottom banner block styles start */
 .bottom-banner {
 	background-color: #f8f8f8;
