@@ -14,24 +14,59 @@
     }
 
     .header {
-        position: relative;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        z-index: 15;
+    }
+
+    .content {
+        margin-top: 50px;
     }
 
     .header-top {
-        flex-direction: column;
-        padding-top: 40px;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0;
+        position: relative;
+        height: 56px;
     }
 
-    .logo {
+    .header .logo {
         height: 34px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        align-items: center;
+    }
+
+    .search-toggle-btn {
+        display: block;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 30px;
+        color: #ff0125;
     }
 
     .header-top .search {
-        margin-top: 20px;
+        display: none;
+        position: absolute;
+        top: 110%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .header-top .search.activated {
+        display: block;
     }
 
     .header-top .right-text {
-        margin-top: 20px;
+        display: none;
     }
 
     .header-bottom {
@@ -45,6 +80,7 @@
     .content .content-block__banner-text span {
         height: auto;
         line-height: initial;
+        font-size: 55px;
     }
 
     .content .content-block__banner-text span:last-child {
@@ -102,11 +138,23 @@
     .about-block {
         margin: 0;
     }
+
+    .footer-nav__container .socials li:first-child a {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content .content-block__banner-text span {
+        height: auto;
+        line-height: initial;
+        font-size: 45px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     .content .content-block__banner-text span {
-        font-size: 48px;
+        font-size: 40px;
     }
 
     ul.footer-nav__list, ul.footer-nav__copyright {
@@ -140,5 +188,14 @@
 
     .bottom-banner {
         display: none;
+    }
+
+    .footer-menu__block {
+        width: 130px;
+    }
+
+    .footer-menu__list li {
+        line-height: unset;
+        margin-top: 12px;
     }
 }

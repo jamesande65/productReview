@@ -30,6 +30,7 @@ $(document).ready(function(){
     function mobMenuToggle (event) {
         if (!mobMenuBtn.contains(event.target) && !mobMenu.contains(event.target) && mobMenu.classList.contains('activated')){
             mobMenu.classList.remove('activated');
+            mobMenuBtn.classList.remove('menu-close');
         }
     }
 

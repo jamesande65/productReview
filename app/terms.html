@@ -28,14 +28,17 @@
 <body>
     <div class="header">
         <div class="header-top">
+            <div class="search-toggle-btn menu-close" onclick="$('.js-search')[0].classList.toggle('activated'); $(this)[0].classList.toggle('menu-close');">
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </div>
             <div class="logo">
                 <a href="/">products<span>reviews</span></a>
             </div>
-            <div class="search">
+            <div class="search js-search">
                 <form>
                     <div class="form-group">
                         <input type="text" placeholder="Show me the best...">
-                        <button type="submit"></button>
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
                 </form>
             </div>
@@ -537,10 +540,11 @@
                 </div>
             </div>
         </div>
-        <div class="mob-menu__burger" onclick="$('.js-mob-menu')[0].classList.toggle('activated')">
+        <div class="mob-menu__burger" onclick="$('.js-mob-menu')[0].classList.toggle('activated'); $(this)[0].classList.toggle('menu-close');">
             <span></span>
             <span></span>
             <span></span>
+            <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <div class="mob-menu js-mob-menu">
             <div class="menu-item">
@@ -573,7 +577,7 @@
             <div class="menu-item">
                 <a href="#"><span>more categories...</span></a>
             </div>
-    </div>
+        </div>
     </div>
 
     <div class="content main">
@@ -588,8 +592,77 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="terms-block__text-wrapper">
-                            <div class="terms-block__title"></div>
-                            <div class="terms-block__text"></div>
+                            <div class="terms-block__title">
+                                <span>1. <span class="bold-text">Terms</span></span>
+                            </div>
+                            <div class="terms-block__text">
+                                <p>
+                                    By accessing this website, you are agreeing to be bound by these web site Terms and Conditions of Use, all applicable laws, and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.
+                                </p>
+                            </div>
+                            <div class="terms-block__title">
+                                <span>2. <span class="bold-text">Use License</span></span>
+                            </div>
+                            <div class="terms-block__text">
+                                <p>
+                                    Permission is granted to temporarily download one copy of the materials (information or software) 10 Beasts website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+                                    modify or copy the materials;
+                                    use the materials for any commercial purpose, or for any public display (commercial or non-commercial);
+                                    attempt to decompile or reverse engineer any software contained on 10 Beasts’s website;
+                                    remove any copyright or other proprietary notations from the materials; or
+                                    transfer the materials to another person or “mirror” the materials on any other server.
+                                    This license shall automatically terminate if you violate any of these restrictions and may be terminated by 10 Beasts at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.
+                                </p>
+                            </div>
+                            <div class="terms-block__title">
+                                <span>3. <span class="bold-text">Disclaimer</span></span>
+                            </div>
+                            <div class="terms-block__text">
+                                <p>
+                                    The materials on 10 Beasts’s web site are provided “as is”. 10 Beasts makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, 10 Beasts does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet web site or otherwise relating to such materials or on any sites linked to this site.
+                                </p>
+                            </div>
+                            <div class="terms-block__title">
+                                <span>4. <span class="bold-text">Limitations</span></span>
+                            </div>
+                            <div class="terms-block__text">
+                                <p>
+                                    In no event shall 10 Beasts or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials on 10 Beasts’s Internet site, even if 10 Beasts or a 10 Beasts authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+                                </p>
+                            </div>
+                            <div class="terms-block__title">
+                                <span>5. <span class="bold-text">Revisions and Errata</span></span>
+                            </div>
+                            <div class="terms-block__text">
+                                <p>
+                                    The materials appearing on 10 Beasts’s web site could include technical, typographical, or photographic errors. 10 Beasts does not warrant that any of the materials on its web site are accurate, complete, or current. 10 Beasts may make changes to the materials contained on its web site at any time without notice. 10 Beasts does not, however, make any commitment to update the materials.
+                                </p>
+                            </div>
+                            <div class="terms-block__title">
+                                <span>6. <span class="bold-text">Links</span></span>
+                            </div>
+                            <div class="terms-block__text">
+                                <p>
+                                    The materials on 10 Beasts’s web site are provided “as is”. 10 Beasts makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights. Further, 10 Beasts does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its Internet web site or otherwise relating to such materials or on any sites linked to this site.
+                                </p>
+                            </div>
+                            <div class="terms-block__title">
+                                <span>7. <span class="bold-text">Site Terms of Use Modifications</span></span>
+                            </div>
+                            <div class="terms-block__text">
+                                <p>
+                                    10 Beasts may revise these terms of use for its web site at any time without notice. By using this website you are agreeing to be bound by the then-current version of these <span class="red-text">Terms and Conditions of Use</span>.
+                                </p>
+                            </div>
+                            <div class="terms-block__title">
+                                <span>8. <span class="bold-text">Governing Law</span></span>
+                            </div>
+                            <div class="terms-block__text">
+                                <p>
+                                    Any claim relating to 10 Beasts’s web site shall be governed by the laws of the State of 10beasts.com without regard to its conflict of law provisions.
+                                    General Terms and Conditions applicable to Use of a Web Site.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -895,10 +968,10 @@ Have a question? <a href="#" class="red-text">Just ask.</a></p>
         </div>
     </div>
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/plugins.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/plugins.min.js"></script>
 </body>
 </html>
