@@ -99,6 +99,7 @@
         display: flex;
     }
 
+    .banner-block__title span,
     .content .content-block__banner-text span {
         height: auto;
         line-height: initial;
@@ -182,6 +183,7 @@
 }
 
 @media screen and (max-width: 768px) {
+    .banner-block__title span,
     .content .content-block__banner-text span {
         height: auto;
         line-height: initial;
@@ -224,6 +226,10 @@
 
     .header-top .right-text {
         text-align: center;
+    }
+
+    .banner-block__title span {
+        font-size: 30px;
     }
 
     .content-block__title span {
