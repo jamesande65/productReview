@@ -73,7 +73,7 @@ img {
 }
 
 .red-text {
-	color: #ff0125;
+	color: #ff0125 !important;
 }
 
 .bold-text {
@@ -944,6 +944,26 @@ a.ad-link {
 }
 
 /* ===============CONTACT=US=PAGE=================*/
+
+
+/* ===============CATEGORY=PAGE=================*/
+
+.category-block {
+	padding-bottom: 50px;
+}
+
+.category-block .second-block .content-block__latest-small {
+	margin-top: 29px;
+}
+
+.category .banner-block {
+	height: 240px;
+	background: url("../img/phone.jpg") 50% 54% no-repeat;
+	position: relative;
+}
+
+
+/* ===============CATEGORY=PAGE=================*/
 
 
 /* MAIN STYLES END */

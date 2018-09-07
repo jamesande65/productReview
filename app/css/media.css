@@ -180,6 +180,10 @@
     .footer-nav__container .socials li:first-child a {
         margin-left: 0;
     }
+
+    .category-block .right-block .row:first-child .content-block__latest-small {
+        margin-top: 35px;
+    }
 }
 
 @media screen and (max-width: 768px) {
