@@ -68,17 +68,23 @@ img {
 
 
 /* CUSTOM STYLES START */
+a {
+	cursor: pointer;
+}
+
 .clear {
 	clear: both;
 }
 
 .red-text {
 	color: #ff0125 !important;
+	font-size: inherit;
 }
 
 .bold-text {
 	font-family: 'Roboto-Bold', sans-serif;
 	font-weight: 700;
+	font-size: inherit;
 }
 
 .divider {
@@ -860,11 +866,37 @@ img {
 }
 
 .todays-deals__slick {
-	overflow: hidden;
+	position: relative;
+	padding: 0;
+	margin-bottom: 50px;
 }
 
 .todays-deals__slick .block {
 	margin: 0 5px;
+}
+
+.carousel-arrows {
+	font-size: 25px;
+	line-height: 20px;
+	color: #bcbbbb;
+}
+
+.carousel-arrows.left {
+	position: absolute;
+	left: -46px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+.carousel-arrows.right {
+	position: absolute;
+	right: -46px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
 }
 /* today's deals block styles end */
 
@@ -1178,6 +1210,176 @@ a.ad-link {
 
 
 /* ===============CATEGORY=PAGE=================*/
+
+
+/* ===============ARTICLE=PAGE=================*/
+
+.article blockquote {
+	padding: 0 18px;
+	margin: 0 0 20px;
+	border-left: 5px solid #eee;
+}
+
+.content-block__share-buttons .content-block__share-item:last-child i {
+	font-family: 'Font Awesome 5 Free';
+}
+
+.content-block__share-item {
+	width: 115px;
+	height: 32px;
+	border: none;
+	-webkit-border-radius: 2px;
+	        border-radius: 2px;
+	margin: 10px 6px 0 0;
+	color: #ffffff;
+}
+
+.content-block__share-item span {
+	margin: 0 28px;
+}
+
+.content-block__share-buttons .facebook {
+	background-color: #3a589e;
+}
+
+.content-block__share-buttons .google-plus {
+	background-color: #df4a36;
+}
+
+.content-block__share-buttons .twitter {
+	background-color: #429cd7;
+}
+
+.content-block__share-buttons .pinterest {
+	background-color: #cd1f29;
+}
+
+.content-block__share-buttons .layer-group {
+	background-color: #323b44;
+}
+
+.article-block .content-block__latest-small {
+	margin-top: 29px;
+}
+
+.article-block .content-block__title {
+	margin-top: 29px;
+}
+
+.article-block .article-ad-block img {
+	max-width: 100%;
+	margin: 30px auto 0;
+	display: block;
+}
+
+.article .banner-block {
+	background: url("../img/mouse.jpg") 50% 54% no-repeat;
+}
+
+.article .banner-block__title {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+}
+
+.article .banner-block__title > span {
+	font-size: 40px;
+	font-family: 'Roboto-Bold', sans-serif;
+	font-weight: 700	;
+	max-width: 61%;
+}
+
+.article .article-block__info {
+	background-color: #f8f8f8;
+	padding: 46px 0;
+	margin: 0;
+}
+
+.article .article-block__info p {
+	color: #494747;
+	font-size: 18px;
+	line-height: 27px;
+	font-weight: 400;
+}
+
+.article .article-block__info p+p {
+	margin-top: 40px;
+}
+
+.article table {
+	width: 100%;
+	margin-top: 62px;
+}
+
+.article table tr {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 100%;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.article table tbody tr {
+	padding: 0 20px;
+}
+
+.article table tbody tr td:first-child {
+	font-family: 'Roboto-Bold', sans-serif;
+	font-weight: 700;
+}
+
+.article table tbody tr:hover {
+	-webkit-box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.08);
+	        box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.08);
+	position: relative;
+	z-index: 10;
+}
+
+.article table tbody tr:hover td:first-child {
+	color: #ff0125;
+	text-decoration: underline;
+}
+
+.article table tr th,
+.article table tr td {
+	-webkit-flex-basis: 16%;
+	    -ms-flex-preferred-size: 16%;
+	        flex-basis: 16%;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 70px;
+}
+
+.article table tbody tr:nth-child(2n+1) {
+	background-color: #fcfdfe;
+}
+
+.article table tbody tr:nth-child(2n) {
+	background-color: #f9f9fe;
+}
+
+.article table tr th {
+	color: #293034;
+	text-transform: uppercase;
+}
+
+.article table tr td {
+	color: #616161;
+	font-size: 16px;
+	line-height: 80px;
+}
+
+/* ===============ARTICLE=PAGE=================*/
 
 
 /* MAIN STYLES END */

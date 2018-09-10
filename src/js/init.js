@@ -1,9 +1,12 @@
 $(document).ready(function(){
     $('.todays-deals__slick').slick({
         slidesToShow: 4,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
+        prevArrow: '<div class="carousel-arrows left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+        nextArrow: '<div class="carousel-arrows right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
         dots: false,
         infinite: false,
+        swipeToSlide: true,
         responsive: [
             {
                 breakpoint: 650,
