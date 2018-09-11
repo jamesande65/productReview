@@ -23,7 +23,7 @@
     }
 
     .content {
-        margin-top: 50px;
+        margin-top: 55px;
     }
 
     .header-top {
@@ -183,6 +183,10 @@
 
     .category-block .right-block .row:first-child .content-block__latest-small {
         margin-top: 35px;
+    }
+
+    .article .right-block {
+        margin-top: 50px;
     }
 }
 
