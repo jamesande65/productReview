@@ -108,12 +108,18 @@ a {
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: .7px;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
 .btn:hover {
 	background-color: #4cc95a;
 	border-color: #4cc95a;
 	color: #ffffff;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
 .btn.check-btn {
@@ -125,12 +131,18 @@ a {
 	color: #ffffff;
 	border: none;
 	min-width: 115px;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
 .btn.check-btn:hover {
 	-webkit-box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
 	        box-shadow: 0 4px 7px rgba(0, 0, 0, 0.2);
 	background-color: #33ac40;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
 .arrow-span {
@@ -190,10 +202,16 @@ a {
 	text-transform: uppercase;
 	letter-spacing: .7px;
 	float: right;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .content-block__title .more-link:hover {
 	color: #ff0125;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .content-block__title .more-link:hover .arrow-span {
@@ -406,6 +424,9 @@ a {
 	border-right: 1px solid #000000;
 	border-left: 1px solid #34383a;
 	border-bottom: 2px solid transparent;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .main-menu .menu-item a {
@@ -425,17 +446,23 @@ a {
 .main-menu .menu-item:hover {
 	background-color: #191c1f;
 	border-bottom: 2px solid #ff0128;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .main-menu .menu-subitem {
-	display: none;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
 	position: absolute;
 	top: 100%;
 	left: 0;
 	width: 100vw;
 	background-color: #0a0b0c;
-	opacity: 0.98;
-	z-index: 15;
+	opacity: 0;
+	z-index: -1;
 	padding: 40px 57px;
 	-webkit-box-align: start;
 	-webkit-align-items: flex-start;
@@ -445,13 +472,17 @@ a {
 	-webkit-justify-content: space-between;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
 
 .main-menu .menu-item:hover .menu-subitem {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
+	opacity: 0.98;
+	z-index: 15;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
 }
 
 .main-menu .menu-item .menu-subitem__left {
@@ -482,10 +513,16 @@ a {
 	letter-spacing: 0.7px;
 	padding: 15px 0;
 	width: 200px;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .main-menu .menu-item .menu-subitem__left li:hover {
 	color: #ff0125;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .main-menu .menu-item .menu-subitem__left li + li {
@@ -788,10 +825,16 @@ a {
 .content-block__small-title a {
 	color: #25282a;
 	text-decoration: none;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .content-block__small-title a:hover {
 	color: #ff0125;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .content-block__small-title span {
@@ -1100,10 +1143,16 @@ a {
 	        justify-content: center;
 	text-decoration: none;
 	margin-left: 8px;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
 .contactus-block .socials li a:hover {
 	background-color: #2200f2;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
 .contactus-block .divider {
@@ -1377,6 +1426,9 @@ a {
 	        align-items: center;
 	width: 100%;
 	padding: 0 30px;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
 .article .content-block__table table tbody tr td:first-child {
@@ -1408,6 +1460,9 @@ a {
 	        box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.08);
 	position: relative;
 	z-index: 10;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 }
 
 .article .content-block__table table tbody tr:hover td:first-child a {
@@ -1511,9 +1566,9 @@ a {
 
 .article .content-block__table table tr td:nth-child(1),
 .article .content-block__table table tr th:nth-child(1) {
-	-webkit-flex-basis: 24%;
-	    -ms-flex-preferred-size: 24%;
-	        flex-basis: 24%;
+	-webkit-flex-basis: 22%;
+	    -ms-flex-preferred-size: 22%;
+	        flex-basis: 22%;
 }
 
 .article .content-block__table table tr th:nth-child(2),
@@ -1777,10 +1832,16 @@ a {
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
 .article .content-block__item .check-btn:hover {
 	background-color: #33ac40;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
 .article .content-block__item .check-btn .fa-shopping-cart {
@@ -1878,6 +1939,9 @@ a {
 
 .article .content-block__item .content-block__item-rating-square i:hover {
 	border: 1px solid rgba(100, 105, 109, 0.34);
+	-webkit-transition: border 0.2s ease;
+	-o-transition: border 0.2s ease;
+	transition: border 0.2s ease;
 }
 
 .article .content-block__item .content-block__item-rating-square.choosen-item {
@@ -1914,10 +1978,16 @@ a {
 
 .footer-title .red-text {
 	text-decoration: none;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .footer-title .red-text:hover {
 	color: #ff0125;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .footer-menu {
@@ -1950,10 +2020,16 @@ a {
 .footer-menu__list li a {
 	color: #d0d0d0;
 	text-decoration: none;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .footer-menu__list li a:hover {
 	color: #ff0125;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .footer-nav__container {
@@ -2001,10 +2077,16 @@ a {
 	text-decoration: none;
 	font-size: 14px;
 	font-weight: 700;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .footer-nav__list li a:hover {
 	color: #ff0125;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .footer-nav__list li + li {
@@ -2035,10 +2117,16 @@ a {
 	        justify-content: center;
 	text-decoration: none;
 	margin-left: 5px;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
 .footer-nav__container .socials li a:hover {
 	background-color: #2200f2;
+	-webkit-transition: background-color 0.3s ease;
+	-o-transition: background-color 0.3s ease;
+	transition: background-color 0.3s ease;
 }
 
 .footer-nav__copyright li {
@@ -2055,10 +2143,16 @@ a {
 	font-weight: 300;
 	text-decoration: underline;
 	padding-right: 5px;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .footer-nav__copyright li a:hover {
 	color: #ffffff;
+	-webkit-transition: color 0.3s ease;
+	-o-transition: color 0.3s ease;
+	transition: color 0.3s ease;
 }
 
 .footer-nav__copyright li + li a {
