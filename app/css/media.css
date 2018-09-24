@@ -270,6 +270,10 @@
         overflow-x: auto;
     }
 
+    .article .content-block__table table tbody tr td {
+        padding: 10px;
+    }
+
     .content-block__table-arrow {
         position: absolute;
         display: -webkit-box;
@@ -392,10 +396,6 @@
         margin: 0;
     }
 
-    .article .article-block__pros-and-cons .article-block__pros-and-cons-title.green-text {
-        padding: 30px 0 30px 30px;
-    }
-
     .article .article-block .article-block__img {
         max-height: initial;
         width: 100%;
@@ -428,11 +428,11 @@
     }
 
     .article .article-block__pros-and-cons-block {
-        border: 1px solid #bdbdbd;
+        border: 1px solid #e8e8e8;
     }
 
     .article .article-block__pros-and-cons-block + .article-block__pros-and-cons-block {
-        border-left: 1px solid #bdbdbd;
+        border-left: 1px solid #e8e8e8;
         margin-top: 20px;
     }
 

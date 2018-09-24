@@ -1157,13 +1157,12 @@ a {
 .article .content-block__table table {
 	width: 100%;
 	min-width: 940px;
-	border: 1px solid #bdbdbd;
+	border: 1px solid #e8e8e8;
 	position: relative;
 }
 
 .article .content-block__table table thead {
-	border: 1px solid #bdbdbd;
-	background: #ececec;
+	background: #f2f2f2;
 }
 
 .article .content-block__table table tbody tr td:first-child {
@@ -1172,7 +1171,7 @@ a {
 }
 
 .article .content-block__table table tbody tr td {
-	padding: 10px;
+	padding: 20px;
 }
 
 .article .content-block__table table tbody tr td:first-child a {
@@ -1246,7 +1245,7 @@ a {
 }
 
 .article .content-block__table table tbody tr:hover + tr td {
-    box-shadow: inset 0px 16px 5px -10px rgba(0, 0, 0, 0.08);
+    box-shadow: inset 0 16px 5px -10px rgba(0, 0, 0, 0.08);
 }
 
 .article .content-block__table table tr th,
@@ -1256,6 +1255,12 @@ a {
 	min-height: 80px;
 	max-width: 240px;
 	padding: 8px;
+	border-left: 1px solid #d5d5d5;
+}
+
+.article .content-block__table table tr th:first-child,
+.article .content-block__table table tr td:first-child {
+	border-left: none;
 }
 
 .article .content-block__table table tbody tr:nth-child(2n+1) {
@@ -1266,12 +1271,23 @@ a {
 	background-color: #f9f9fe;
 }
 
+.article .content-block__table table tr th,
+.article .content-block__table table tr td:not(:first-child) {
+	text-align: center;
+}
+
 .article .content-block__table table tr th {
 	color: #293034;
-	text-transform: uppercase;
+	font-size: 17px;
 	font-weight: 700;
 	height: 80px;
     vertical-align: middle;
+	border-top: 5px solid #4cc95a;
+}
+
+.article .content-block__table table tr th:first-child,
+.article .content-block__table table tr th:nth-child(2) {
+	border-top: 5px solid #ff0125;
 }
 
 .article .content-block__table table tr td {
@@ -1280,30 +1296,20 @@ a {
 }
 
 .article .content-block__table table tr th:nth-child(5) {
-	text-align: center;
-	color: #19b42b;
+	color: #41a049;
 	background: linear-gradient(to right, #f8f8f8, #ffffff);
 	padding: 0 5px;
 }
 .article .content-block__table table tr td:nth-child(5) {
 	background-color: #d3ffd8;
-	color: #19b42b;
+	color: #41a049;
 	font-size: 16px;
 	font-weight: 700;
 	padding: 0 5px;
 	text-align: center;
 }
 
-.article .content-block__table table tr th:nth-child(6),
 .article .content-block__table table tr td:nth-child(6) {
-	font-size: 16px;
-	font-weight: 700;
-	text-align: center;
-}
-
-.article .content-block__table table tr td:nth-child(6) {
-	display: flex;
-	justify-content: flex-end;
 	line-height: 40px;
 }
 
@@ -1374,33 +1380,40 @@ a {
 
 .article .article-block__pros-and-cons .article-block__pros-and-cons-title {
 	display: block;
-	padding: 30px 0 30px 30px;
+	padding: 30px 0;
 	color: #293034;
-	font-size: 15px;
+	font-size: 17px;
 	font-weight: 700;
-	text-transform: uppercase;
-	border-bottom: 1px solid #bdbdbd;
-	background: #ececec;
+	text-align: center;
+	background: #f2f2f2;
+}
+
+.article .article-block__pros-and-cons-block:first-child .article-block__pros-and-cons-title {
+	border-top: 5px solid #4cc95a;
+}
+
+.article .article-block__pros-and-cons-block:last-child .article-block__pros-and-cons-title {
+	border-top: 5px solid #ff0125;
 }
 
 .article .article-block__pros-and-cons-block {
-	border: 1px solid #bdbdbd;
+	border: 1px solid #e8e8e8;
 	border-right: none; 
 }
 
 .article .article-block__pros-and-cons-block + .article-block__pros-and-cons-block {
-	border-left: none;
-	border-right: 1px solid #bdbdbd;
+	border-left: 1px solid #d5d5d5;
+	border-right: 1px solid #e8e8e8;
 }
 
 .article .article-block__pros-and-cons .pros:nth-child(2n+1),
 .article .article-block__pros-and-cons .cons:nth-child(2n+1) {
-	background-color: #fcfdfe;
+	background-color: #f9f9fe;
 }
 
 .article .article-block__pros-and-cons .pros:nth-child(2n),
 .article .article-block__pros-and-cons .cons:nth-child(2n) {
-	background-color: #f9f9fe;
+	background-color: #ffffff;
 }
 
 .article .article-block__pros-and-cons .pros,
