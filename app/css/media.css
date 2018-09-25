@@ -65,23 +65,23 @@
 @media screen and (max-width: 1199px) {
     /* content block table fixed row */
     .article .content-block__table table tr.table-fixed-row th {
-        min-width: 171px;
+        min-width: 183px;
     }
 
     .article .content-block__table table tr.table-fixed-row th:nth-child(2) {
-        min-width: 168px;
+        min-width: 181px;
     }
 
     .article .content-block__table table tr.table-fixed-row th:nth-child(3) {
-        min-width: 174px;
+        min-width: 172px;
     }
 
     .article .content-block__table table tr.table-fixed-row th:nth-child(4) {
-        min-width: 161px;
+        min-width: 157px;
     }
 
     .article .content-block__table table tr.table-fixed-row th:nth-child(5) {
-        min-width: 86px;
+        min-width: 87px;
     }
     /* content block table fixed row */
 }

@@ -124,7 +124,7 @@ a {
 
 .btn.check-btn {
 	height: 40px;
-	margin-left: 19px;
+	margin: 0 10px 0 9px;
 	-webkit-border-radius: 5px;
 	        border-radius: 5px;
 	background-color: #4cc95a;
@@ -1427,7 +1427,7 @@ a {
 }
 
 .article .content-block__table table tbody tr td {
-	padding: 20px;
+	padding: 10px;
 	vertical-align: top;
 }
 
@@ -1533,7 +1533,8 @@ a {
 }
 
 .article .content-block__table table tr th,
-.article .content-block__table table tr td:not(:first-child) {
+.article .content-block__table table tr td:last-child,
+.article .content-block__table table tr td:nth-child(5) {
 	text-align: center;
 }
 
@@ -1544,11 +1545,6 @@ a {
 	height: 80px;
     vertical-align: middle;
 	border-top: 5px solid #4cc95a;
-}
-
-.article .content-block__table table tr th:first-child,
-.article .content-block__table table tr th:nth-child(2) {
-	border-top: 5px solid #ff0125;
 }
 
 .article .content-block__table table tr td {
@@ -1599,27 +1595,27 @@ tr.table-fixed-row {
 .article .content-block__table table tr.table-fixed-row th {
 	display: table-cell;
 	max-width: 240px;
-	min-width: 217px;
+	min-width: 230px;
 }
 
 .article .content-block__table table tr.table-fixed-row th:nth-child(2) {
-	min-width: 218px;
+	min-width: 231px;
 }
 
 .article .content-block__table table tr.table-fixed-row th:nth-child(3) {
-	min-width: 218px;
+	min-width: 214px;
 }
 
 .article .content-block__table table tr.table-fixed-row th:nth-child(4) {
-	min-width: 205px;
+	min-width: 197px;
 }
 
 .article .content-block__table table tr.table-fixed-row th:nth-child(5) {
-	min-width: 102px;
+	min-width: 108px;
 }
 
 .article .content-block__table table tr.table-fixed-row th:nth-child(6) {
-	min-width: 180px;
+	min-width: 160px;
 }
 /* content block table fixed row */
 
@@ -1787,10 +1783,10 @@ tr.table-fixed-row {
 	-webkit-justify-content: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	border: 3px solid #bdbdbd;
+	border: 3px solid #ff0125;
 	-webkit-border-radius: 15px;
 	        border-radius: 15px;
-	color: #bdbdbd;
+	color: #ff0125;
 	left: 30px;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
