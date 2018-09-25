@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Post A</title>
 
@@ -28,7 +28,7 @@
 <body>
     <div class="header">
         <div class="header-top">
-            <div class="search-toggle-btn menu-close" onclick="$('.js-search')[0].classList.toggle('activated'); $(this)[0].classList.toggle('menu-close');">
+            <div class="search-toggle-btn menu-close" onclick="$('.js-search')[0].classList.toggle('activated'); $(this)[0].classList.toggle('menu-close');$('.js-search-input').focus();">
                 <i class="fa fa-search" aria-hidden="true"></i>
             </div>
             <div class="logo">
@@ -37,7 +37,7 @@
             <div class="search js-search">
                 <form>
                     <div class="form-group">
-                        <input type="text" placeholder="Show me the best...">
+                        <input class="js-search-input" type="text" placeholder="Show me the best...">
                         <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
                 </form>

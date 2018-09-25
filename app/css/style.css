@@ -1428,6 +1428,7 @@ a {
 
 .article .content-block__table table tbody tr td {
 	padding: 20px;
+	vertical-align: top;
 }
 
 .article .content-block__table table tbody tr td:first-child a {
@@ -1568,13 +1569,59 @@ a {
 	color: #41a049;
 	font-size: 16px;
 	font-weight: 700;
-	padding: 0 5px;
 	text-align: center;
+}
+.article .content-block__table table tr td:nth-child(5) span {
+	width: 45px;
+	height: 45px;
+	-webkit-border-radius: 23px;
+	        border-radius: 23px;
+	display: inline-block;
+	text-align: center;
+	line-height: 45px;
 }
 
 .article .content-block__table table tr td:nth-child(6) {
 	line-height: 40px;
 }
+
+/* content block table fixed row */
+tr.table-fixed-row {
+	position: absolute;
+	top: -2px;
+	left: 0;
+	right: 0;
+	width: 100%;
+	display: table-row-group;
+	background: #f2f2f2;
+}
+
+.article .content-block__table table tr.table-fixed-row th {
+	display: table-cell;
+	max-width: 240px;
+	min-width: 217px;
+}
+
+.article .content-block__table table tr.table-fixed-row th:nth-child(2) {
+	min-width: 218px;
+}
+
+.article .content-block__table table tr.table-fixed-row th:nth-child(3) {
+	min-width: 218px;
+}
+
+.article .content-block__table table tr.table-fixed-row th:nth-child(4) {
+	min-width: 205px;
+}
+
+.article .content-block__table table tr.table-fixed-row th:nth-child(5) {
+	min-width: 102px;
+}
+
+.article .content-block__table table tr.table-fixed-row th:nth-child(6) {
+	min-width: 180px;
+}
+/* content block table fixed row */
 
 .article .article-block .left-block .content-block__title-text {
 	font-weight: bold;
@@ -1627,7 +1674,6 @@ a {
 	line-height: 15px;
 	-webkit-border-radius: 10px;
 	        border-radius: 10px;
-	border: 2px solid;
 	display: inline-block;
 	text-align: center;
 	vertical-align: bottom;

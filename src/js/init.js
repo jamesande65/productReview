@@ -46,30 +46,18 @@ $(document).ready(function(){
     var table = document.querySelector(".content-block__table");
     var arrow = document.querySelector(".content-block__table-arrow");
 
-    table.addEventListener("scroll", function () {
-        var newScrollLeft=$(table).scrollLeft();
-        var divWidth = $(table).outerWidth();
-        var scrollwidth =$(table).get(0).scrollWidth;
+    if(table && arrow) {
+        table.addEventListener("scroll", function () {
+            var newScrollLeft=$(table).scrollLeft();
+            var divWidth = $(table).outerWidth();
+            var scrollwidth =$(table).get(0).scrollWidth;
 
-        if(newScrollLeft === scrollwidth - divWidth){
-            arrow.style.display = 'none';
-        } else {
-            arrow.style.display = 'flex';
-        }        
-    });
-
-    $(window).on("resize", function () {
-        if ($(window).width() > 991) {
-            arrow.style.display = 'none';
-        } else {
-            arrow.style.display = 'flex';
-            $(table).scrollLeft(0);
-        }
-    });
-
-    
-    
-
-
+            if(newScrollLeft === scrollwidth - divWidth){
+                arrow.style.display = 'none';
+            } else {
+                arrow.style.display = 'flex';
+            }
+        });
+    }
 
 });
