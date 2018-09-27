@@ -60,4 +60,51 @@ $(document).ready(function(){
         });
     }
 
+
+
+
+    // table sticky header
+
+    function UpdateTableHeaders() {
+        $(".content-block__table table").each(function() {
+            var el             = $(this),
+                offset         = el.offset(),
+                scrollTop      = $(window).scrollTop(),
+                floatingHeader = $(".floatingHeader", this)
+
+
+            if (screen.width < 991) {
+                if ((scrollTop - 50 > offset.top) && (scrollTop - 50 < offset.top + el.height())) {
+                    floatingHeader.css({
+                        "visibility": "visible",
+                        "top": scrollTop - offset.top + 53
+                    });
+                } else {
+                    floatingHeader.css({
+                        "visibility": "hidden"
+                    });
+                }
+            } else {
+                if ((scrollTop > offset.top) && (scrollTop < offset.top + el.height())) {
+                    floatingHeader.css({
+                        "visibility": "visible",
+                        "top": scrollTop - offset.top - 3
+                    });
+                } else {
+                    floatingHeader.css({
+                        "visibility": "hidden"
+                    });
+                }
+            }
+        });
+    }
+
+    // DOM Ready
+    $(function() {
+        $(window)
+            .scroll(UpdateTableHeaders)
+            .trigger("scroll");
+
+    });
+
 });
