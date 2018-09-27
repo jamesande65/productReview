@@ -506,7 +506,6 @@ a {
 }
 
 .main-menu .menu-item .menu-subitem__left li {
-	color: #d0d0d0;
 	font-family: 'Roboto-Regular', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -520,10 +519,17 @@ a {
 }
 
 .main-menu .menu-item .menu-subitem__left li:hover {
-	color: #ff0125;
 	-webkit-transition: color 0.3s ease;
 	-o-transition: color 0.3s ease;
 	transition: color 0.3s ease;
+}
+
+.main-menu .menu-item .menu-subitem__left li a {
+	color: #d0d0d0;
+}
+
+.main-menu .menu-item .menu-subitem__left li:hover a {
+	color: #ff0125;
 }
 
 .main-menu .menu-item .menu-subitem__left li + li {
@@ -1086,6 +1092,8 @@ a {
 .banner-block {
     height: 240px;
     background: url("../img/background-4.jpg") 50% 54% no-repeat;
+	-webkit-background-size: cover;
+	        background-size: cover;
     position: relative;
 }
 
