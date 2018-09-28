@@ -683,6 +683,58 @@ a {
 .right-block .row + .row .content-block__latest-small {
 	margin-top: 35px;
 }
+
+/* IMPROVEMENT 28.09*/
+
+.right-block__related {
+	position: relative;
+}
+
+.right-block__related-wrapper {
+	margin-top: 30px;
+	top: 20px;
+	max-width: 263px;
+	z-index: 99;
+	opacity: 1;
+	transition: opacity .3s;
+}
+
+.right-block__related-list {
+	margin: 20px 0;
+}
+
+.right-block__related-list li+li {
+	border-top: 1px solid #ececec;
+}
+
+.right-block__related-list a {
+	font-size: 18px;
+	margin-left: 5px;
+	font-family: Roboto-Bold,sans-serif;
+	font-weight: 700;
+	line-height: 30px;
+	color: #25282a;
+	text-decoration: none;
+	transition: color .3s ease;
+}
+
+.right-block__related-list li:hover a {
+	color: #ff0125;
+	transition: color .3s ease;
+}
+
+.right-block__related-list i {
+	color:#4cc95a;
+	transition: color .3s ease;
+}
+
+.right-block__related-list li:hover i {
+	color: #25282a;
+	transition: color .3s ease;
+}
+
+/* IMPROVEMENT 28.09*/
+
 /* latest reviews block styles end*/
 
 /* today's deals block styles start */
@@ -1381,7 +1433,6 @@ tr.table-fixed-row {
 .floatingHeader {
 	position: fixed;
 	top: 0;
-	visibility: hidden;
 }
 /* content block table fixed row */
 
