@@ -22,6 +22,15 @@
     }
 }
 
+@media (min-width: 1200px) {
+    .article .content-block__table table tr th:nth-child(6),
+    .article .content-block__table table tr td:nth-child(6),
+    .article .content-block__table .table-fixed-row table tr th:nth-child(6),
+    .article .content-block__table .table-fixed-row table tr td:nth-child(6) {
+        width: 13%;
+    }
+}
+
 @media (min-width: 992px) {
     .content-block__table-arrow {
         display: none;
@@ -381,10 +390,10 @@
 
 @media screen and (max-width: 480px) {
     .content .content-block__banner-text {
-        height: 250px;
+        height: 200px;
     }
     .content .content-block__banner-text span {
-        font-size: 30px;
+        font-size: 24px;
     }
 
     ul.footer-nav__list, ul.footer-nav__copyright {
