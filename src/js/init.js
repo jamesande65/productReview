@@ -84,7 +84,7 @@ $(document).ready(function(){
                 } else {
                     floatingHeader.css({
                         "opacity": "0",
-                        "z-index": "0",
+                        "z-index": "-1",
                         "transition": "all .3s",
                     });
                 }
@@ -99,7 +99,7 @@ $(document).ready(function(){
                 } else {
                     floatingHeader.css({
                         "opacity": "0",
-                        "z-index": "0",
+                        "z-index": "-1",
                         "transition": "all .3s",
                     });
                 }
@@ -122,11 +122,12 @@ $(document).ready(function(){
             if (screen.width > 991) {
                 if ((scrollTop > offset.top) && (scrollTop < leftBlock.offset().top + leftBlock.height() - floatingBlock.height())) {
                     floatingBlock.css({
-                        "position": "fixed",
+                        "position": "absolute",
+                        "top": scrollTop - offset.top + "px"
                     });
-                } else {
+                } else if (scrollTop < offset.top) {
                     floatingBlock.css({
-                        "position": "static",
+                        "top": "0px",
                     });
                 }
             }
