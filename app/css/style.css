@@ -2049,6 +2049,131 @@ tr.table-fixed-row {
 /* ===============ARTICLE=PAGE=================*/
 
 
+/* IMPROVEMENT 01.10.2018 */
+
+/* pagination block styles start */
+
+.pagination-block ul {
+	margin: 50px auto 0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+
+.pagination-block ul li + li {
+	margin-left: 5px;
+}
+
+.pagination-block .btn {
+	height: 50px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 38px;
+	min-width: initial;
+	border: 1px solid rgba(100, 105, 109, 0.34);
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.pagination-block .btn:hover {
+	border: 1px solid #4cc95a;
+	background-color: #ffffff;
+	color: #25282a;
+}
+
+.pagination-block .num .btn,
+.pagination-block .dots .btn {
+	width: 50px;
+}
+
+.pagination-block .num.active .btn {
+	background-color: #4cc95a;
+	border: 1px solid #4cc95a;
+	color: #ffffff;
+}
+
+.pagination-block .dots .btn {
+	background-color: transparent;
+	border: 1px solid transparent;
+	cursor: auto;
+}
+
+.pagination-block .pagination-nav .btn {
+	width: 150px;
+}
+
+.pagination-block .pagination-nav.inactive .btn {
+	color: #d3d3d3;
+	cursor: auto;
+}
+
+.pagination-block .pagination-nav.inactive .btn:hover {
+	border: 1px solid rgba(100, 105, 109, 0.34);
+}
+
+/* pagination block styles end */
+
+
+/* show more block styles start */
+
+.show-more-block {
+	margin-top: 50px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+
+.show-more-block .btn {
+	width: 150px;
+	height: 50px;
+	-webkit-border-radius: 5px;
+	        border-radius: 5px;
+	border: 1px solid rgba(100, 105, 109, 0.34);
+	background-color: #ffffff;
+	line-height: 38px;
+	color: #25282a;
+	font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+}
+
+.show-more-block .btn:hover {
+	border: 1px solid rgba(37, 40, 42, 0.34);
+	color: #25282a;
+}
+
+/* show more block styles end */
+
+
+/* IMPROVEMENT 01.10.2018 */
+
+
+
 /* MAIN STYLES END */
 
 
